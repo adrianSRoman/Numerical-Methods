@@ -1,3 +1,8 @@
+/* Størmer form of the Størmer-Verlet Methods
+* The simulation solves a simple, normalized second order differential equation:
+* \ddot{y} = -\kappa*sin(y) - \alpha*\dot{y} + \eta, y(0) = 0.4, \dot{y} = 0.4
+* where \kappa = 1 and \alpha = 0.05
+*/
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -15,7 +20,6 @@ int main()
    double  fn, t0, tn, y0, yn, ym, ym2, kappa, eta;
    double  fm, alpha,  v0, vn, vm, a, b;
    double  t_start, t_stop, dt;
-   /* This is for opening a file -- leave it as is unless you know what you are doing */
    char    *rundat = "Dat";
    char    datfile[BUF1];
    FILE    *f_dat;

@@ -16,7 +16,6 @@ int main()
    double  fn, t0, tn, t_plus, y0, yn, ym, ym2, ym3, kappa, eta, c_rk, loc_err, ac_err;
    double  t_start, t_stop, dt, dt_tar;
    double  k1_m, k2_m, k1_m2, k2_m2, k1_m3, k2_m3; // Runge Kutta k-values
-   /* This is for opening a file -- leave it as is unless you know what you are doing */
    char    *rundat = "Dat-adapt";
    char    datfile[BUF1];
    FILE    *f_dat;
